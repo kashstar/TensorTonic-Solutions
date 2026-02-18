@@ -7,10 +7,8 @@ def make_diagonal(v):
     # Write code here
     n = len(v)
     ans = np.zeros((n,n))
-    for i in range(len(v)):
-        for j in range(len(v)):
-            if i == j:
-                ans[i][j] = v[i]
-
+    for i in range(n):
+        ans[i][i] = v[i]
+        
     return ans
     pass
